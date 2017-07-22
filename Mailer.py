@@ -15,6 +15,10 @@ class Mailer:
         self.bot = telepot.Bot("275198711:AAGF2cppsvIWHkfL4yFSCTSZpmxwtG-wtp8")
         self.bot.sendMessage(238370268,text)
 
+    def send_image(self, location):
+        self.bot = telepot.Bot("275198711:AAGF2cppsvIWHkfL4yFSCTSZpmxwtG-wtp8")
+        self.bot.sendPhoto(238370268, location)
+
     def get_current_message(self):
         self.bot = telepot.Bot("275198711:AAGF2cppsvIWHkfL4yFSCTSZpmxwtG-wtp8")
         updates = self.bot.getUpdates()
