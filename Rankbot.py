@@ -34,7 +34,7 @@ class Rankbot:
                 print(message)
 
                 self.log.append(current_page_number)
-                with open("sitelog/log.picle","wb") as logfile:
+                with open("sitelog/log.pickle","wb") as logfile:
                     pickle.dump(self.log, logfile)
 
                 self.mailer.send(message)

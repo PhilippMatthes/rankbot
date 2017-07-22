@@ -31,6 +31,7 @@ if __name__=="__main__":
         elif (message == "Stats"):
             try:
                 rankbot.send_stats()
+                sleep(180)
             except KeyboardInterrupt:
                 mailer.send("Keyboard Interrupt. Bot will exit now.")
                 print("Exiting...")
